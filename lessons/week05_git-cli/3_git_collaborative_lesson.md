@@ -4,12 +4,12 @@ Now that you've mastered the personal workflow, let's explore how Git enables co
 
 ## Branching: The Foundation of Collaboration
 
-Collaborative workflows heavily rely on **branching**. A branch in Git is a separate line of development within a repository. It allows you to work on new features, bug fixes, or experiments without affecting the main codebase.<br> 
+Recall that collaborative workflows heavily rely on **branching**. A branch in Git is a separate line of development within a repository. It allows you to work on new features, bug fixes, or experiments without affecting the main codebase.<br> 
 
 Think of branches like parallel universes of your code - you can make changes in one branch while keeping the main branch stable and functional.
 
 ### Branches vs. Forks
-Before we dive into the workflow, let's clarify two similar concepts:
+Before we dive into the workflow, let's remember two similar concepts:
 
 * **Branches** are within the same repository. They make collaboration easier among team members who have write access to the repository.
 * **Forks** create a completely separate copy of the repository in your GitHub account. This is useful for outside contributors who don't have write access to the original repository.

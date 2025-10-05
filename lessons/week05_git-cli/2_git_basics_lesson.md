@@ -73,43 +73,43 @@ When you:
 ## Git Workflows: Personal Workflow
 There are a variety of workflows you may employ when using Git to track your changes. The most common, particularly for academic settings, is the **personal workflow**.
 
-<br><img src="../../../img/personal.png" alt="forking" width="50%">
+<br><img src="../../img/personal.png" alt="forking" width="50%">
 
 In the personal workflow, you are largely going to be the only person adding to the repository. You have one **branch**, or version of your project. It is called the `main` branch. Every time you make changes to the code, you'll add them to the `main` branch. 
 
 The main goal with version control settings is keeping track of the changes that you, the main user, are making to your repository. You don't have to worry about handling multiple people working on the repository at once, which simplifies the workflow. This is the first setting we will work in for this workshop.
 
 ## GitHub
-Git is often used in tandem with a cloud-based hosting platform - the most common is **GitHub** (but others include Gitlab and Bitbucket). GitHub is a hosting service for Git repositories. It allows you to store your Git projects in the cloud and provides a platform for collaborating with others. The benefit to using GitHub is that it makes it easier to collaborate on code with others via its web platform.<br>
+Git is often used in tandem with a cloud-based hosting platform -- we have been using **GitHub** (but there are others include Gitlab and Bitbucket). Recall that GitHub is a hosting service for Git repositories. It allows you to store your Git projects in the cloud and provides a platform for collaborating with others. The benefit to using GitHub is that it makes it easier to collaborate on code with others via its web platform.<br>
  
 In this lesson, we're going to use Git in command line and GitHub to make updates to a repository.  <br>
 
-A **repository** (or repo for short) is a central place where all the files related to a project are stored. It includes your project’s code, documentation, and a record of every change made to the files over time, managed through a version control system like Git. <br>
+Recall that a **repository** (or repo for short) is a central place where all the files related to a project are stored. It includes your project’s code, documentation, and a record of every change made to the files over time, managed through a version control system like Git. <br>
 
 ## Managing Local and Remote Repositories
-We need to make a distinction between two kinds of repositories: there's the local repository and the remote repository. **The local repository** is the version of the code that is stored on your computer. **The remote repository**, meanwhile, is any version of the repository that lies on some other machine. In this context, remote repository is almost always going to refer to the version that is on on GitHub's servers. <br>
+Recall that there is a local repository and a remote repository. **The local repository** is the version of the code that is stored on your computer. **The remote repository**, meanwhile, is any version of the repository that lies on some other machine. In this context, remote repository is almost always going to refer to the version that is on on GitHub's servers. <br>
 
-So, when we're making changes to a repository, there's two versions that need to stay in sync with each other: the local and the remote. The steps we outline keep track of those changes between both cases, while also keeping track of the entire history. GitHub provides a nice platform on which we can peruse the history of a repository.<br>
-<br><img src="../../../img/workflow.png" alt="forking" width="50%"><br>
+So, when we're making changes to a repository, we need to synchronize the local and the remote. The steps we outline keep track of those changes between both cases, while also keeping track of the entire history. GitHub provides a nice platform on which we can peruse the history of a repository.<br>
+<br><img src="../../img/workflow.png" alt="forking" width="50%"><br>
 
 1. **Commit**: Save your selected changes with a description.
 2. **Push**: Upload your saved changes to GitHub for others to see.
 3. **Pull**: Download the latest updates from GitHub to your project.
 
 For Git from command line, there are two more command you will use: `add` and `status`
-<br><img src="../../../img/committing.jpeg" alt="forking" width="50%"><br>
+<br><img src="../../img/committing.jpeg" alt="forking" width="50%"><br>
 
 Let's go through the process of making changes to a repository, step by step.<br>
  
 ### 1. **Creating a Repository**
-To create a new repository on GitHub, click on this [link](https://docs.github.com/en/get-started/quickstart/create-a-repo) and follow the instructions. Make sure to tick the `Add a README file` box under "Initialize this repository with". Click on `Create repository`. You now have a remote repository (on GitHub's servers), but **not** a local repository.<br>
+Let's create another repository on GitHub. Click on this [link](https://docs.github.com/en/get-started/quickstart/create-a-repo) and follow the instructions. Make sure to tick the `Add a README file` box under "Initialize this repository with". Click on `Create repository`. You now have a remote repository (on GitHub's servers), but **not** a local repository.<br>
 
 Alternatively, you can create a repository locally first using `git init`. This command initializes a new Git repository in your current directory, creating a `.git` folder that contains all the version control information.<br>
 
 🥊**Challenge**: Let's create a new repository under your account. <br>
 
 ### 2. **Cloning** 
-Cloning a repository means taking a remote repository, and copying it to our local machine to create a local repository. We run the command `git clone [REPO-LINK]` to do so, filling `[REPO-LINK]` with the link to your repository.<br>
+Recall that cloning a repository means taking a remote repository, and copying it to our local machine to create a local repository. On the command line, we run the command `git clone [REPO-LINK]` to do so, filling `[REPO-LINK]` with the link to your repository.<br>
 The terminal will ask for your username and password. Use your Github username as the username and the personal token we created as the password. 
 
 🥊**Challenge**: Let's clone a repository. <br>
@@ -145,10 +145,10 @@ Right now, the local repo knows about the changes we did, but the remote repo do
 Let's check the GitHub page to see if the changes you made manifest on the website! <br>
 
 ### 9. Make Edits and Commits on GitHub Directly
-Let's make changes to the remote repository by making changes GitHub page directly. <br>
+Recall you can make changes to the remote repository by making changes GitHub page directly. Let's do that now. <br>
 
 ### 10. Pull Changes from Remote
-When you make changes on GitHub directly, your local repository doesn't automatically know about them. Use `git pull` to bring those changes to your local machine:<br>
+Recall that when you make changes on GitHub directly, your local repository doesn't automatically know about them. Use `git pull` to bring those changes to your local machine:<br>
 ```bash
 git pull origin main
 ```

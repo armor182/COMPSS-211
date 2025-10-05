@@ -17,17 +17,9 @@ approach depends on your operating system:
 
 *Note:* if you are working from Github Codespaces, git shold already be installed.
 
-# Creating a Github Account
-
-Next, you need to make sure you have a Github account. If you have already
-signed up on Github, go ahead and login right now. If you have not created an
-account, go to [this link](https://github.com/join) and create an account with
-your email address. Be sure to check your email in order to validate your
-account. Once you've created an account, sign into Github.
-
 # Creating Git Authentication Tools
 
-Github is an online platform to provides a place to store updates to code
+As you know, Github is an online platform to provides a place to store updates to code
 repositories you might work with. It works tightly with the `git` software, and
 provides additional tools to facilitate working with repositories. In order to
 keep your code safe, Github has some security settings in place that we need to

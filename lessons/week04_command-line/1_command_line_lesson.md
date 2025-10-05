@@ -101,8 +101,8 @@ The command line can feel archaic, but remembering some keyboard shortcuts can h
 * `Ctrl-E`: Go to end of line
 * `Ctrl-R`: Search through your command history interactively.
 * `Option-Arrow Keys`: Move the cursor word by word instead of character by character.
-* `Control-U`: Delete everything on the line before the cursor.
-* `Control-K`: Delete everything on the line after the cursor.
+* `Ctrl-U`: Delete everything on the line before the cursor.
+* `Ctrl-K`: Delete everything on the line after the cursor.
 * `Tab`: Autocomplete filenames and commands
 
 ---
