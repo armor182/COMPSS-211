@@ -14,7 +14,7 @@ Before we dive into the workflow, let's remember two similar concepts:
 * **Branches** are within the same repository. They make collaboration easier among team members who have write access to the repository.
 * **Forks** create a completely separate copy of the repository in your GitHub account. This is useful for outside contributors who don't have write access to the original repository.
 
-<br><img src="../../../img/collaborative.png" alt="collaborative workflow" width="50%">
+<br><img src="../../img/collaborative.png" alt="collaborative workflow" width="50%">
 
 ## The Collaborative Workflow Process
 
@@ -24,7 +24,7 @@ The typical collaborative workflow follows these steps:
 When contributing to someone else's project, start by **forking** the repository. This creates a copy of the repository in your own GitHub account, giving you full control to make changes without affecting the original.
 
 🥊**Challenge**: Fork the [`Git-Playground`](https://github.com/dlab-berkeley/Git-Playground) repository. Look for the "Fork" button in the top-right corner:<br>
-<img src="../../../img/fork.png" alt="forking" width="50%"><br>
+<img src="../../img/fork.png" alt="forking" width="50%"><br>
 
 ### 2. **Clone Your Fork** 
 Clone your forked repository to your local machine:
