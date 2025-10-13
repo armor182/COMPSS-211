@@ -42,6 +42,9 @@ Each toolbox contains only the tools (packages) needed for that specific project
 - **Cleanliness**: Keep your system Python clean and avoid conflicts
 - **Collaboration**: Share your environment setup with teammates
 
+**Note: If you already have installed Anaconda, please skip to "Creating a Conda Environment".**
+
+
 ## Introduction to Conda
 
 **Conda** is both a package manager and an environment manager. Unlike pip (which only manages Python packages), Conda can manage packages from any language and handle complex dependencies more effectively.
@@ -88,7 +91,7 @@ conda activate compss211
 
 🥊 **Challenge**: Set up Conda using the method appropriate for your system.
 
-## Creating Your First Conda Environment
+## Creating a Conda Environment
 
 Now let's create a Conda environment for your final project using the provided environment file.
 
@@ -125,19 +128,18 @@ conda activate compss211
 conda install ipykernel
 ```
 
-🥊 **Challenge**: Let's try out IPython on the command line:
-
-```bash
-ipython
-```
-
-🔔 **Question**: How does the IPython prompt look different from regular Python?
-
-💡 **Tip**: If conda doesn't have a package, you can use `pip install package_name` within your activated environment.
+💡 **Tip**: If conda doesn't have a package, you can use `pip install package_name` within your activated environment. Conda installs packages from its own curated repositories, while pip installs from the Python Package Index (PyPI).
 
 ## Understanding Python Packages
 
 A **Python package** is a way to organize related modules (Python files) together. It's like organizing your code into folders and subfolders, but with special files that make Python treat them as importable units.
+
+This is useful in industry practice — instead of working with a tangle of Jupyter notebooks, you structure your code into reusable, testable, and shareable components. This makes it easier to:
+- Keep your project organized as it grows
+- Reuse functions and classes across different scripts or notebooks
+- Collaborate with others using clear project structure
+- Write tests and automate workflows
+- Eventually package and distribute your code (e.g., with pip)
 
 ### Package Structure
 ```
@@ -216,14 +218,9 @@ pip install -e .
 The `.` tells pip to install the package in the current directory, and `-e` makes it editable.
 
 ### Testing Your Installation
-Let's test that your package is properly installed by importing a file from it. Let's open up IPython, which you just installed:
+Let's test that your package is properly installed by importing a file from it. Create a new Jupyter Notebook in the `notebooks/` folder, and activate the Python kernel `compss211` you just created.
 
-```bash
-# Open a Python shell
-ipython
-```
-
-Then run the following import. You'll need to use your `PACKAGE_NAME`, which you changed from `mypkg` earlier.
+Then, in a code cell, run the following import. You'll need to use your `PACKAGE_NAME`, which you changed from `mypkg` earlier.
 
 ```python
 # Import the test function from your package
@@ -244,7 +241,7 @@ The beauty of editable installations is that changes are immediately reflected. 
 2. Find the `test()` function.
 3. Change the print statement to something different.
 4. Save the file.
-5. Open a new Python shell and run `test()` again. Don't forget to import it!
+5. Restart your kernel and run `test()` again. Don't forget to import it!
 
 🔔 **Question**: Do you see your new message without reinstalling anything?
 
@@ -274,7 +271,7 @@ def format_currency(amount, currency="USD"):
 
 ### Step 2: Test Your Function
 ```python
-# In a Python shell
+# In a cell
 from [PACKAGE_NAME].utils import calculate_average, format_currency
 
 # Test your functions
